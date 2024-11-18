@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Example</title>
+    <style>
+        h1 {
+            font-size: 25px;
+            color: pink;
+        }
+        /*Insert before an element*/
+        h1::before{
+            content: "*";
+            color:black;
+        }
+        /*Insert after an element*/
+        h1::after{
+            content: "*";
+            color: greenyellow;
+        }
+        h1::first-letter {
+            color: violet;
+        }
+        h1::first-line{
+            color: red;
+            font-style: calc();
+        }
+        h1::selection {
+            color: green;
+            font-size: 120px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello I am Jahnavi From JFS10 batch</h1>
+</body>
+</html>
