@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            margin: 15px;
+        }
+        .border {
+            border:15px solid purple;
+        }
+        
+        .box1 {
+            height: 200px;
+            width: 200px;
+            padding: 50px;
+            border-top:25px dotted yellow;
+            border-left:25px dotted red;
+            border-right:25px dotted green;
+            border-bottom:25px dotted blue;
+        }
+        .shadow {
+            height: 150px;
+            width: 300px;
+            padding: 50px;
+            margin: 15px;
+            background-color: darkorange;
+            border-radius: 10px;
+            
+        }
+        .shadows {
+            box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+        }
+        .shadow1 {
+            
+            height: 300px;
+            width: 300px;
+            padding: 80px;
+            margin: 20px;
+            background-color: blueviolet;
+            border-radius: 30px;
+            
+        }
+        .shadows1 {
+            box-shadow: inset 30px 30px 30px 30px rgba(0, 0, 0, 0.5);
+        }
+        .gradient {
+            
+            height: 200px;
+            width: 300px;
+        }
+        .linear-gradient {
+            background:linear-gradient(to right, purple, pink);
+        }
+        .radial-gradient {
+            background:radial-gradient(circle,black,gray);
+        }
+        .conic-gradient {
+            background:conic-gradient(yellow,red,green,blue);
+        }
+        .transition {
+            
+            height: 250px;
+            width: 250px;
+            padding: 100px;
+            margin: 15px;
+            background-color: darkcyan;
+            border: 20px;
+            transition:background 5s ease 1s;
+        }
+        
+        .transition:hover{
+            background-color: purple;
+        }
+        
+        .transition1 {
+            
+            height: 200px;
+            width: 200px;
+            padding: 100px;
+            margin: 15px;
+            background-color: darkred;
+            border: 20px;
+            transition:height 5s ease 3s;
+        }
+        
+        .transition1:hover{
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box border"> Jahnavi</div><hr>
+    <div class="box1 ">JAANU</div><hr>
+    <div class="shadow shadows">Jaanu</div><hr>
+    <br>
+    <br>
+    <div class="shadow1 shadows1">JahnaVi</div><hr>
+    <div class="gradient linear-gradient">Hello I am JahnaVi</div>
+    <br>
+    <div class="gradient radial-gradient">Hello I am JahnaVi</div>
+    <br>
+    <div class="gradient conic-gradient">Hello I am JahnaVi</div>
+    <br>
+    <div class="transition">Hey JAANU</div>
+    <br>
+    <div class="transition1">Hello JahnaVi</div>
+</body>
+</html>
