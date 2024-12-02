@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+header {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: black;
+    color: plum;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.albums {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgb(12, 53, 79);
+}
+
+.albums h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.album-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.album {
+    width: 200px;
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+}
+
+.album p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.player {
+    background-color: rgb(129, 80, 106);
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+footer {
+    background-color: rgb(188, 215, 226);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Music Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Playlists</li>
+                <li><a href="#"></a>Artists</li>
+                <li><a href="#"></a>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome To My Music World</h1>
+        <p>Whatever the situation happend in your life, don't get too emotional. Just listen to my playlist and chill...</p>
+    </section>
+
+    <section class="albums">
+        <h2>Featured Albums</h2>
+        <div class="album-list">
+            <div class="album">
+                <img src="images/album-cover1.jpg" alt="Album 1">
+                <p>Album Title 1</p>
+            </div>
+            <div class="album">
+                <img src="images/album-cover2.jpg" alt="Album 2">
+                <p>Album Title 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="player">
+        <h2>Now Playing</h2>
+        <audio controls>
+            <source src="your-audio-file.mp" type="https://pagalworld.skin/perfect-ed-sheeran">
+            Your browser doesn't support the audio element.
+        </audio>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Music Website</p>
+    </footer>
+</body>
+</html>
